@@ -1,0 +1,9 @@
+replicaCount: 2
+image:
+  repository: my-repo/phoenix-app
+  pullPolicy: IfNotPresent
+  tag: "latest"
+service:
+  type: ClusterIP
+  port: 80
+targetPort: 8080
